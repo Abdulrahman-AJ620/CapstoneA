@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intrusion Detection Dashboard</title>
+</head>
+<body>
+    <h1>Intrusion Detection System</h1>
+    <h2>Analysis Results</h2>
+    <ul>
+        {% for result in analysis_results %}
+            <li>
+                <strong>Log Entry:</strong> {{ result.entry }}<br>
+                <strong>Analysis:</strong> {{ result.analysis }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
